@@ -1,0 +1,24 @@
+# Remove Startup Message
+startup_message off
+
+# Home Directory
+chdir
+
+# Automatically deatch on hangup
+autodetach on
+
+# Change default scrollback value
+defscrollback 10000
+
+# Start with Visual bell as default
+vbell on
+vbell_msg "bell on %t (%n)"
+
+# Look and Feel
+caption always "%{= bb}%{+b w}%n %t %h %=%l %H %c"
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+
+activity "Activity in %t(%n)"
+
+shelltitle "shell"
+shell -$SHELL
